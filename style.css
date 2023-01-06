@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* comon */
+header,
+h1{
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* header */
+header{
+  margin-bottom: 24px;
+  background: #efefef;
+  padding: 24px;
+}
+
+header h1{
+  margin: 16px;
+  margin-top: 0;
+  
+}
+
+/* calculate */
+
+.table{
+  margin: 0 auto;
+}
+
+table td{
+  text-align: center;
+  width: 200px;
+  height: 30px;
+}
+
+.thead{
+  font-size: 24px;
+}
+
+.btn{
+  display: block;
+  margin: 0 auto;
+}

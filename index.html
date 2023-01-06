@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="マックのカロリーを自動で計算してくれるサイトです。ダイエットに役立つ！好きなバーガー、サイドメニュー、ドリンクを選択してカロリーを確認！">
+  <meta name="keywords" content="マック,マクドナルド,マクド,カロリー,ダイエット,カロリー計算,食事制限,体型管理">
+  <title>マックカロリー自動計算｜好きな商品を選んでカロリーを計算！</title>
+  <link rel="stylesheet" href="sanitize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="hamburger.png">
+</head>
+
+<body>
+
+  <header>
+    <h1>マックのカロリー計算しよう</h1>
+  </header>
+
+  <form action="#" name="form1">
+
+    <table class="table">
+      <tr class="thead">
+        <th>商品を選択</th>
+        <th>カロリー</th>
+      </tr>
+      <div id="burger">
+        <tr id="ccc">
+          <td>
+            <select class="select" id="menu1" name="goods1">
+              <!-- hiddenで初期値設定 -->
+              <option hidden value="0">商品を選択してください</option>
+              <!-- disabledで説明挿入 -->
+              <option disabled>・・・バーガー・・・</option>
+              <option value="383">えびフィレオ</option>
+              <option value="497">てりやきチキンフィレオ</option>
+              <option value="489">てりやきマックバーガー</option>
+              <option value="387">エグチ</option>
+              <option value="390">スパチキ</option>
+              <option value="329">スパビー</option>
+              <option value="457">ダブルチーズバーガー</option>
+              <option value="307">チーズバーガー</option>
+              <option value="430">チキチー</option>
+              <option value="344">チキンクリスプ</option>
+              <option value="467">チキンフィレオ</option>
+              <option value="256">ハンバーガー</option>
+              <option value="625">サムライマック ダブル肉厚ビーフ</option>
+              <option value="465">サムライマック ベーコントマト肉厚ビーフ</option>
+             
+              <option disabled>・・・サイドメニュー・・・</option>
+              <option value="10">サイドサラダ</option>
+              <option value="250">シャカチキ</option>
+              <option value="148">ソフトツイスト</option>
+              <option value="270">ナゲット5P</option>
+              <option value="810">ナゲット15P</option>
+              <option value="161">プチパン</option>
+              <option value="211">アップルパイ</option>
+              <option value="225">ポテトS</option>
+              <option value="410">ポテトM</option>
+              <option value="517">ポテトL</option>
+              <option value="235">フルーリーオレオ</option>
+              <option value="337">フルーリー超オレオ</option>
+              <option value="232">ワッフルコーン プレーン</option>
+              <option value="295">ワッフルコーン チョコアーモンド</option>
+              <option value="257">ワッフルコーン ストロベリー</option>
+              <option value="59">ヨーグルト</option>
+              <option value="83">えだまめコーン</option>
+
+              <option disabled>・・・ドリンク・・・</option>
+              <option value="94">Qoo (S)</option>
+              <option value="146">Qoo (M)</option>
+              <option value="189">Qoo (L)</option>
+              <option value="90">コーラ (S)</option>
+              <option value="140">コーラ (M)</option>
+              <option value="181">コーラ (L)</option>
+              <option value="80">スプライト (S)</option>
+              <option value="124">スプライト (M)</option>
+              <option value="202">スプライト (L)</option>
+              <option value="101">ファンタグレープ/メロン (S)</option>
+              <option value="156">ファンタグレープ/メロン (M)</option>
+              <option value="202">ファンタグレープ/メロン (L)</option>
+              <option value="92">オレンジ (S)</option>
+              <option value="143">オレンジ (M)</option>
+              <option value="185">オレンジ (L)</option>
+              <option value="79">野菜生活 (S)</option>
+              <option value="123">野菜生活 (M)</option>
+              <option value="160">野菜生活 (L)</option>
+              <option value="216">マックシェイク (S)</option>
+              <option value="356">マックシェイク (M)</option>
+            </select>
+          </td>
+          <td>
+            <input type="text" name="price1" size="5" value="0"> kcal
+          </td>
+          <!-- <td>
+            <button id="add">add</button>
+          </td> -->
+        </tr>
+      </div>
+      <tr>
+      <!-- <div id="option"></div> -->
+      </tr>
+      <tr>
+        <td>
+          <select class="select" id="menu" name="goods2">
+            <option hidden value="0">商品を選択してください</option>
+              <option disabled>・・・バーガー・・・</option>
+              <option value="383">えびフィレオ</option>
+              <option value="497">てりやきチキンフィレオ</option>
+              <option value="489">てりやきマックバーガー</option>
+              <option value="387">エグチ</option>
+              <option value="390">スパチキ</option>
+              <option value="329">スパビー</option>
+              <option value="457">ダブルチーズバーガー</option>
+              <option value="307">チーズバーガー</option>
+              <option value="430">チキチー</option>
+              <option value="344">チキンクリスプ</option>
+              <option value="467">チキンフィレオ</option>
+              <option value="256">ハンバーガー</option>
+              <option value="625">サムライマック ダブル肉厚ビーフ</option>
+              <option value="465">サムライマック ベーコントマト肉厚ビーフ</option>
+             
+              <option disabled>・・・サイドメニュー・・・</option>
+              <option value="10">サイドサラダ</option>
+              <option value="250">シャカチキ</option>
+              <option value="148">ソフトツイスト</option>
+              <option value="270">ナゲット5P</option>
+              <option value="810">ナゲット15P</option>
+              <option value="161">プチパン</option>
+              <option value="211">アップルパイ</option>
+              <option value="225">ポテトS</option>
+              <option value="410">ポテトM</option>
+              <option value="517">ポテトL</option>
+              <option value="235">フルーリーオレオ</option>
+              <option value="337">フルーリー超オレオ</option>
+              <option value="232">ワッフルコーン プレーン</option>
+              <option value="295">ワッフルコーン チョコアーモンド</option>
+              <option value="257">ワッフルコーン ストロベリー</option>
+              <option value="59">ヨーグルト</option>
+              <option value="83">えだまめコーン</option>
+
+              <option disabled>・・・ドリンク・・・</option>
+              <option value="94">Qoo (S)</option>
+              <option value="146">Qoo (M)</option>
+              <option value="189">Qoo (L)</option>
+              <option value="90">コーラ (S)</option>
+              <option value="140">コーラ (M)</option>
+              <option value="181">コーラ (L)</option>
+              <option value="80">スプライト (S)</option>
+              <option value="124">スプライト (M)</option>
+              <option value="202">スプライト (L)</option>
+              <option value="101">ファンタグレープ/メロン (S)</option>
+              <option value="156">ファンタグレープ/メロン (M)</option>
+              <option value="202">ファンタグレープ/メロン (L)</option>
+              <option value="92">オレンジ (S)</option>
+              <option value="143">オレンジ (M)</option>
+              <option value="185">オレンジ (L)</option>
+              <option value="79">野菜生活 (S)</option>
+              <option value="123">野菜生活 (M)</option>
+              <option value="160">野菜生活 (L)</option>
+              <option value="216">マックシェイク (S)</option>
+              <option value="356">マックシェイク (M)</option>
+          </select>
+        </td>
+        <td>
+          <input type="text" name="price2" size="5" value="0"> kcal
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select class="select" id="menu" name="goods3">
+            <option hidden value="0">商品を選択してください</option>
+              <option disabled>・・・バーガー・・・</option>
+              <option value="383">えびフィレオ</option>
+              <option value="497">てりやきチキンフィレオ</option>
+              <option value="489">てりやきマックバーガー</option>
+              <option value="387">エグチ</option>
+              <option value="390">スパチキ</option>
+              <option value="329">スパビー</option>
+              <option value="457">ダブルチーズバーガー</option>
+              <option value="307">チーズバーガー</option>
+              <option value="430">チキチー</option>
+              <option value="344">チキンクリスプ</option>
+              <option value="467">チキンフィレオ</option>
+              <option value="256">ハンバーガー</option>
+              <option value="625">サムライマック ダブル肉厚ビーフ</option>
+              <option value="465">サムライマック ベーコントマト肉厚ビーフ</option>
+             
+              <option disabled>・・・サイドメニュー・・・</option>
+              <option value="10">サイドサラダ</option>
+              <option value="250">シャカチキ</option>
+              <option value="148">ソフトツイスト</option>
+              <option value="270">ナゲット5P</option>
+              <option value="810">ナゲット15P</option>
+              <option value="161">プチパン</option>
+              <option value="211">アップルパイ</option>
+              <option value="225">ポテトS</option>
+              <option value="410">ポテトM</option>
+              <option value="517">ポテトL</option>
+              <option value="235">フルーリーオレオ</option>
+              <option value="337">フルーリー超オレオ</option>
+              <option value="232">ワッフルコーン プレーン</option>
+              <option value="295">ワッフルコーン チョコアーモンド</option>
+              <option value="257">ワッフルコーン ストロベリー</option>
+              <option value="59">ヨーグルト</option>
+              <option value="83">えだまめコーン</option>
+
+              <option disabled>・・・ドリンク・・・</option>
+              <option value="94">Qoo (S)</option>
+              <option value="146">Qoo (M)</option>
+              <option value="189">Qoo (L)</option>
+              <option value="90">コーラ (S)</option>
+              <option value="140">コーラ (M)</option>
+              <option value="181">コーラ (L)</option>
+              <option value="80">スプライト (S)</option>
+              <option value="124">スプライト (M)</option>
+              <option value="202">スプライト (L)</option>
+              <option value="101">ファンタグレープ/メロン (S)</option>
+              <option value="156">ファンタグレープ/メロン (M)</option>
+              <option value="202">ファンタグレープ/メロン (L)</option>
+              <option value="92">オレンジ (S)</option>
+              <option value="143">オレンジ (M)</option>
+              <option value="185">オレンジ (L)</option>
+              <option value="79">野菜生活 (S)</option>
+              <option value="123">野菜生活 (M)</option>
+              <option value="160">野菜生活 (L)</option>
+              <option value="216">マックシェイク (S)</option>
+              <option value="356">マックシェイク (M)</option>
+          </select>
+        </td>
+        <td>
+          <input type="text" name="price3" size="5" value="0"> kcal
+        </td>
+      </tr>
+      <div class="sum">
+        <tr>
+          <td>
+            合計カロリー
+          </td>
+          <td>
+            <input type="text" name="sum" size="5" value="0"> kcal
+          </td>
+          </td>
+        </tr>
+      </div>
+    </table>
+
+
+  </form>
+
+
+
+  <button id="btn" class="btn">計算</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
